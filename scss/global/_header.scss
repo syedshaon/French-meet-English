@@ -4,6 +4,11 @@
 	// justify-content: center;
 	padding: 0 30px;
 	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	width: 100vw;
 	// width: 100%;
 }
 
@@ -44,4 +49,35 @@ a.icon::after {
 }
 a.facebook::after {
 	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAAQYIEhYZOFVdX6W3vMXKzPcQm23kAAAAQ0lEQVQYV73MSRJAQBAF0aTNypT3P6wFghZhK1e/3qIAgGJSZ+46XzBqzbNFs5s1gypi04jhgsaj/g3t54/foEzpXDuV/ARLUbs1DwAAAABJRU5ErkJggg==");
+}
+
+.hero {
+	.hero-bg {
+		animation: fromLeft linear 5s 1 forwards;
+	}
+}
+
+.how-it-works {
+	// padding-top: 125px;
+}
+
+@keyframes fromLeft {
+	0% {
+		// opacity: 0;
+		// transform: translateX(-10rem);
+		// transform: translateX(-50vw);
+		padding-bottom: 0;
+		transform: scale(1);
+	}
+	// 80% {
+	//   transform: translateX(2rem);
+	// }
+
+	100% {
+		// opacity: 1;
+		// transform: translateX(0rem);
+		// transform: translateX(0);
+		transform: scale(1.3);
+		padding-bottom: 8%;
+	}
 }
