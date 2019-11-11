@@ -1,0 +1,47 @@
+.header {
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	padding: 0 30px;
+	text-align: center;
+	// width: 100%;
+}
+
+img.nav-logo {
+	width: 250px;
+	height: auto;
+}
+
+a.icon {
+	float: right;
+	display: inline-block;
+	cursor: pointer;
+	margin: 3px;
+	height: 44px;
+	width: 44px;
+	background-color: #000;
+	border-radius: 4px;
+	position: relative;
+	margin-top: 13.5px;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #35baf2;
+	}
+}
+
+a.icon::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	content: "";
+}
+a.facebook::after {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAAQYIEhYZOFVdX6W3vMXKzPcQm23kAAAAQ0lEQVQYV73MSRJAQBAF0aTNypT3P6wFghZhK1e/3qIAgGJSZ+46XzBqzbNFs5s1gypi04jhgsaj/g3t54/foEzpXDuV/ARLUbs1DwAAAABJRU5ErkJggg==");
+}

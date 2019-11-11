@@ -1,0 +1,87 @@
+/*
+0 to 600px mobile
+600 to 900px Tablet Portrait
+900 to 1200 Tablet Langscape
+1200 to 1800 normal style
+1800 + Big Screen
+*/
+
+html {
+	/*  It's the size of font size as 14px  [62.5% * 0.875 ((14px / 16px = .875))]   assuming default browser font size as 16px   [10/16 =  62.5%] */
+	font-size: 54.6875%;
+	// font-size: 62.5%;
+}
+
+// @media only Screen and (max-width: 56.25em) {
+// 	html {
+// 		font-size: 50%;
+// 	}
+// }
+
+// @media only Screen and (max-width: 75em) {
+// 	html {
+// 		font-size: 56.25%;
+// 	}
+// }
+
+@media only Screen and (min-width: 900px) {
+	html {
+		/*  It's the size of 1rem assuming default browser font size as 16px  [10/16] */
+		font-size: 62.5%;
+	}
+}
+
+body {
+	font-family: $font__main;
+	font-weight: 400;
+	@include font-size(1.6);
+	// font-size: 1.6rem;
+	line-height: $line-height;
+	color: $color__text-main;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*  apply a natural box layout model to all elements  */
+html {
+	box-sizing: border-box;
+	/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+::-moz-selection {
+	background-color: $selection-background;
+	color: $selection-color;
+}
+
+::selection {
+	background-color: $selection-background;
+	color: $selection-color;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}

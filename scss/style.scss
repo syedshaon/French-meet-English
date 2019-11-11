@@ -1,0 +1,16 @@
+// Import setup scss
+@import "reset";
+@import "variables";
+@import "mixin";
+@import "accessibility";
+@import "global";
+@import "structure";
+@import "elements";
+
+// Import page specific scss
+@import "global/header";
+@import "global/footer";
+@import "global/body";
+
+// import animate.scss
+@import "animate";
